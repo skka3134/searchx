@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
         searchUrl =`https://twitter.com/search?q=${encodeURIComponent(query)}`;
       } else if (selectedEngine === "jingdong") {
         searchUrl = `https://search.jd.com/Search?keyword=${encodeURIComponent(query)}`;
+      } else if (selectedEngine === "tieba") {
+        searchUrl = `https://tieba.baidu.com/f?ie=utf-8&kw=${encodeURIComponent(query)}&fr=search`;
+      } else if (selectedEngine === "xiaohongshu") {
+        searchUrl = `https://www.xiaohongshu.com/search_result?keyword=${encodeURIComponent(query)}&source=web_explore_feed`;
       } else if (selectedEngine === "taobao") {
         searchUrl = `https://s.taobao.com/search?q=${encodeURIComponent(query)}`;
       }
